@@ -111,11 +111,11 @@ section {
     width: 100%;
     height: 100%;
     pointer-events: none;
-    z-index: -1;
+    z-index: 1;
     background-color: rgba(0, 0, 0, .4);
 }
 
-.head_banner .bg_video {
+.head_banner #bg_video {
     /* position: absolute; */
     position: relative;
     right: 0;
@@ -148,6 +148,8 @@ section {
     height: 100%;
     width: 100%;
     padding: 0 12px;
+    z-index: 2;
+    position: relative;
 }
 
 
@@ -910,7 +912,8 @@ section .d-flex .grid2 .grid_content {
 
 .section12 .buttons a p {
     font-size: 16px;
-    margin-left: 16px;
+    margin: 0 0 0 16px;
+    padding-top: 2.5px;
 }
 
 .section13 {
@@ -1370,7 +1373,12 @@ section .d-flex .grid2 .grid_content {
 
 @media (max-width:767.5px) {
 
-    .head_banner .bg_video {
+    .head_banner {
+        max-height: 505.6px;
+        min-height: 505.6px;
+    }
+
+    .head_banner #bg_video {
         height: 500px;
         object-fit: cover;
         object-position: top;
@@ -1579,7 +1587,12 @@ section .d-flex .grid2 .grid_content {
     .section12 .buttons a p {
         font-size: 14px;
         line-height: 14px;
-        padding: 20px 28px 0;
+
+    }
+
+    .section13 {
+        padding: 0 28px ;
+
     }
 
     .broadcast_sec3 {
@@ -1792,6 +1805,28 @@ section .d-flex .grid2 .grid_content {
 }
 
 @media (min-width:768px) and (max-width:1199px) {
+    .head_banner {
+        max-height: 683.512px;
+        height: auto;
+        min-height: 512.638px;
+    }
+
+    .head_banner .head_banner_container .row .col-lg-6 .content {
+        width: 70%;
+    }
+
+    .head_banner .head_banner_container .row .col-lg-6 .content h1 {
+        font-size: 40px;
+        line-height: 40px;
+
+    }
+
+    .head_banner .head_banner_container .row .col-lg-6 .content p {
+        width: 100%;
+        font-size: 20px;
+        line-height: 25px;
+        margin: 13px 0 48px;
+    }
 
     .section3 .sec3_container {
         margin: 0 50px;
@@ -1861,6 +1896,7 @@ section .d-flex .grid2 .grid_content {
 
     .section13 {
         padding: 30px 50px 0;
+        
     }
 
     .broadcast_sec4 .broadcast_pg .section_head h1 {
@@ -1934,18 +1970,13 @@ section .d-flex .grid2 .grid_content {
 
 @media (max-width: 1199px) {
 
-    .head_banner {
-        max-height: 100vh;
-        min-height: 0;
-    }
+
 
     .head_banner .head_banner_container {
         padding: 0 50px;
     }
 
-    .content h1 {
-        font-size: 40px;
-    }
+
 
     .content p {
         font-size: 20px;
@@ -2017,7 +2048,13 @@ section .d-flex .grid2 .grid_content {
         margin: 0;
     }
 
-
+    .section12 .buttons a .img_container{
+        width: 30px;
+        height: 30px;
+    }
+    .section13{
+        margin-bottom: -40px;
+    }
 
     .broadcast_grid_profiles {
         display: none;

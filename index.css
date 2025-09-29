@@ -25,6 +25,8 @@
 
 .navbar-brand {
     margin: 0;
+    padding: 0;
+    height: max-content;
 }
 
 .navbar-brand svg {
@@ -70,7 +72,7 @@
 }
 
 .nav-item .nav-link {
-    
+
     padding: 8px 16px !important;
     margin-right: 5.1px;
     font-size: 17px;
@@ -84,7 +86,7 @@
     display: inline-block;
     transform: translateY(0);
     white-space: pre-wrap;
-    color: #f6f6f6 ;
+    color: #f6f6f6;
     transition: transform 0.8s cubic-bezier(.625, .05, 0, 1);
     transition-delay: calc(var(--j) * 0.006667s);
 }
@@ -213,35 +215,40 @@ nav .link_container:hover .link span {
     padding: 40px 82px 0;
 }
 
-.footer .row .col-5 .content {
+.footer .row .col-md-5 .content {
     width: 80%;
 }
 
-.footer .row .col-5 div p {
+.footer .row .col-12 .content {
+    width: 100%;
+}
+
+.footer .row .col-md-5 div p {
     font-size: 17px;
     line-height: 22px;
     margin: 16px 0;
     width: 100%;
-    color: #dcdcdc;
+    color: #dcdcdc !important;
 }
 
-.footer .row .col-7 .row .col-lg-3 {
+.footer .row .col-md-7 .row .col-lg-3 {
     padding: 0 12px;
     margin-bottom: 24px;
 }
 
-.footer .row .col-7 .row .col-lg-3 ul li {
+.footer .row .col-md-7 .row .col-lg-3 ul li {
     margin-bottom: 16px;
+     color: #dcdcdc !important;
 }
 
-.footer .row .col-7 .row .col-lg-3 ul li a {
+.footer .row .col-md-7 .row .col-lg-3 ul li a {
     text-decoration: none;
-    color: #dcdcdc;
+    color: #dcdcdc !important;
     font-family: Sofia Pro_Regular;
     font-size: 16px;
 }
 
-.footer .row .col-7 .row .col-lg-3 ul li a:hover {
+.footer .row .col-md-7 .row .col-lg-3 ul li a:hover {
     color: #f53b00;
 }
 
@@ -255,11 +262,11 @@ nav .link_container:hover .link span {
     font-size: 17px;
 }
 
-.footer .row .col-7 .row .col-lg-3 ul li .d-flex svg:hover {
+.footer .row .col-md-7 .row .col-lg-3 ul li .d-flex svg:hover {
     transition: all .3s ease-in-out;
 }
 
-.footer .row .col-7 .row .col-lg-3 ul li .d-flex svg:hover {
+.footer .row .col-md-7 .row .col-lg-3 ul li .d-flex svg:hover {
     transform: scale(1.1);
 }
 
@@ -269,6 +276,35 @@ nav .link_container:hover .link span {
         margin: 0 20px;
         padding: 0;
     }
+
+    
+
+    .footer {
+
+        padding: 20px 19.5px 0;
+    }
+
+    .footer .row .col-md-5 div p {
+        font-size: 15px;
+        line-height: 20px;
+        margin: 16px 0 48px;
+    }
+
+    .footer .row .col-md-7 .row .col-lg-3 ul li a {
+        font-weight: 100;
+        font-size: 15px;
+
+    }
+
+    .footer .row .col-md-7 .row .col-lg-3 ul li {
+        margin-bottom: 9.6px;
+    }
+
+    .footer .row p.text-center{
+        font-size: 15px;
+        margin: 16px 0 24px;
+    }
+
 }
 
 @media (max-width: 991.5) {
@@ -286,6 +322,10 @@ nav .link_container:hover .link span {
 }
 
 @media (max-width:1199px) {
+    .navbar-brand svg {
+        margin-right: 0;
+    }
+
     .faq {
         flex-direction: column;
         padding: 20px 20px 44px;
