@@ -464,9 +464,6 @@ section .d-flex .grid1 .img_container img {
     /* object-fit: fill; */
 }
 
-
-
-
 section .d-flex .grid2 .grid_content {
     background: linear-gradient(180deg, #171a1e, #171b1f);
     padding: 65px 60px;
@@ -1353,6 +1350,7 @@ section .d-flex .grid2 .grid_content {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10000;
 }
 
 .floating_btn .message_btn {
@@ -1959,24 +1957,15 @@ section .d-flex .grid2 .grid_content {
 }
 
 @media (max-width: 1024px) {
-
-
     .section4 .grid_profiles {
         display: none;
     }
-
-
 }
 
 @media (max-width: 1199px) {
-
-
-
     .head_banner .head_banner_container {
         padding: 0 50px;
     }
-
-
 
     .content p {
         font-size: 20px;
@@ -2098,7 +2087,6 @@ section .d-flex .grid2 .grid_content {
 
 
 }
-
 
 @media (max-width: 1214px) {
 

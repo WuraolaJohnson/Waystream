@@ -1,8 +1,6 @@
 /* NavBar styling */
-
 .navbar {
     position: relative;
-    /* background-color: transparent; */
     width: 100%;
     padding: 32px 0;
     z-index: 100;
@@ -62,8 +60,6 @@
 
 .link_container .duplicate {
     margin-top: -7px;
-
-
 }
 
 .link_container .duplicate .nav-link {
@@ -108,8 +104,6 @@ nav .link_container:hover .link span {
     border: 1px solid hsla(0, 0%, 100%, .3);
     backdrop-filter: blur(5px);
 }
-
-
 
 .listen_btn:hover {
     border-color: hsla(0, 0%, 100%, .3) !important;
